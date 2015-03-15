@@ -21,11 +21,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <ImageView
+            android:id="@+id/Left1"
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/Color1"/>
         <ImageView
+            android:id="@+id/Left2"
             android:background="@color/Color2"
             android:layout_weight="1"
             android:layout_width="match_parent"
@@ -39,6 +41,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <ImageView
+            android:id="@+id/Right1"
             android:layout_weight="1"
             android:background="@color/Color3"
             android:layout_width="match_parent"
@@ -46,11 +49,13 @@
 
             />
         <ImageView
+            android:id="@+id/Right2"
             android:layout_weight="1"
             android:background="@color/Color4"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
         <ImageView
+            android:id="@+id/Right3"
             android:background="@color/Color5"
             android:layout_weight="1"
             android:layout_width="match_parent"
@@ -63,6 +68,7 @@
 
     <!--TODO: seek bar here-->
 <SeekBar
+    android:id="@+id/MySeakBarID"
     android:layout_weight="10"
     android:layout_width="match_parent"
     android:layout_height="match_parent" />
