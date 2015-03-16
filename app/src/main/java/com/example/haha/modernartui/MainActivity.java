@@ -1,7 +1,9 @@
 package com.example.haha.modernartui;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.net.Uri;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -20,20 +22,23 @@ public class MainActivity extends ActionBarActivity {
     public ImageView right2;
     public ImageView right3;
     public SeekBar mSeekBar;
+    public Dialog mDialog;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+//Dialog
+        mDialog = new Dialog();
 
+
+//Default color
         colorDefault = new int[5];
-
         colorDefault[0]=getResources().getColor(R.color.Color1);
         colorDefault[1]=getResources().getColor(R.color.Color2);
         colorDefault[2]=getResources().getColor(R.color.Color3);
         colorDefault[3]=getResources().getColor(R.color.Color4);
         colorDefault[4]=getResources().getColor(R.color.Color5);
-
-
 
 //TODO: match variable with view id
         left1 = (ImageView) findViewById(R.id.Left1);
@@ -99,10 +104,14 @@ Log.i("COLOR","= "+colorID);
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.More_Information)
+        {
+            mDialog.show(getFragmentManager(),"MoreInformation");
             return true;
         }
+
+        //noinspection SimplifiableIfStatement
+
 
         return super.onOptionsItemSelected(item);
     }

@@ -11,7 +11,7 @@
         <menu>
 
             <item
-                android:id="@+id/action_settings"
+                android:id="@+id/More_Information"
                 android:orderInCategory="96"
                 app:showAsAction="never"
                 android:title="More information"

@@ -3,4 +3,7 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="DialogMes">"Do you want to visit MOMA ?"</string>
+    <string name="dialogYes">Visit MOMA</string>
+    <string name="dialogNO">Not Now</string>
 </resources>
